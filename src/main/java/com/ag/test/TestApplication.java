@@ -1,6 +1,7 @@
 package com.ag.test;
 
 import com.ag.in.rest.client.RestCall;
+import com.ag.in.rest.configuration.RestClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -14,14 +15,15 @@ import java.util.List;
 import java.util.Map;
 
 @SpringBootApplication
-public class ArcReactorRestApplication implements CommandLineRunner {
+@RestClient
+public class TestApplication implements CommandLineRunner {
 
     @Autowired
     RestCall restCall;
 
 
     public static void main(String[] args) {
-        SpringApplication.run(ArcReactorRestApplication.class, args);
+        SpringApplication.run(TestApplication.class, args);
     }
 
     @Override

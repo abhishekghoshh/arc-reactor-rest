@@ -11,7 +11,7 @@ import java.lang.annotation.*;
 @Documented
 @Import({RestClientConfiguration.class})
 @Configuration
-@interface RestClient {
+public @interface RestClient {
 }
 
 
