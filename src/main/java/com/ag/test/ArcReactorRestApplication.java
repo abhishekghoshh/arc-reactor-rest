@@ -1,4 +1,4 @@
-package com.ag.in;
+package com.ag.test;
 
 import com.ag.in.rest.client.RestCall;
 import org.springframework.beans.factory.annotation.Autowired;
